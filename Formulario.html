@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Formulario</Title>
+</head>
+
+<body>
+<h1>Formulario: Registro Torneo para Videojuegos</h1>
+</body>
+<form>
+<table border="1">
+<tr>
+<th>Nombre del jugador: </th>
+<th>
+    <input type="text"
+    placeholder="Escribe tu nombre" minlength="3" maxlength="15" required>
+</th>
+</tr>
+
+<tr>
+<th>Correo</th>
+<th>
+    <input type="email"
+    placeholder="ejemplo@correo.com" required>
+</th>
+</tr>
+
+<tr>
+<th>Edad</th>
+<th>
+    <input type="number"
+    placeholder="Edad" min="12" max="40"
+    required>
+</th>
+</tr>
+
+<tr>
+    <th>Nickname</th>
+    <th>
+        <input type="text"
+        placeholder="Nickname en el juego"
+        pattern="[A-Za-z0-9]">
+    </th>
+</tr>
+
+<tr>
+<th>Categoria</th>
+<th>
+    <input type="radio"
+name="Categoria" value="Principiante">
+Principiante
+
+<input type="radio"
+name="Categoria" value="Intermedio">
+Intermedio
+
+<input type="radio"
+name="Categoria" value="Experto">
+Experto 
+</th>
+</tr>
+
+<tr>
+<th>Juegos favoritos</th>
+<th>
+    <input type="checkbox"
+    name="Juegos" value="FIFA">FIFA
+
+    <input type="checkbox"
+    name="Juegos" value="LoL">LoL
+
+    <input type="checkbox"
+    name="Juegos" value="Minecraft">Minecraft
+</th>
+</tr>
+
+
+
+<tr>
+<th>Fecha de inscripcion</th>
+<th>
+    <input type="date"
+    min="2025-01-01" max="2025-12-31">
+</th>
+</tr>
+
+ <tr>
+<th colspan="2" class="botones">
+<input type="submit" value="Enviar">
+<input type="reset" value="Restablecer">
+</th>
+
+</table>
+</form>
+
+</html>
